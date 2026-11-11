@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quancp Mobile - Điện thoại cao cấp giá tốt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo"><img src="./img/4cba063c-e6c8-4d0b-807d-60fcf1389172.jpg" alt=""></a>
+      <nav class="nav">
+        <a href="#products">Sản phẩm</a>
+        <a href="#policy">Chính sách</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+      <div class="hotline">📞 0398069447</div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <h1>LAPTOP cũ <span>giá tốt</span></h1>
+      <p>Uy tín là trên hết — Bảo hành hậu mãi — Test 7 ngày 1 đổi 1</p>
+    </div>
+  </section>
+
+  <!-- ===== FILTER BAR ===== -->
+  <section class="filters container">
+    <input type="text" id="search" placeholder="🔍 Tìm theo tên máy..." />
+
+    <select id="brandFilter">
+      <option value="all">Tất cả hãng</option>
+      <option value="Vivo">Vivo</option>
+      <option value="Huawei">Huawei</option>
+      <option value="Xiaomi">Xiaomi</option>
+      <option value="Honor">Honor</option>
+      <option value="Oppo">Oppo</option>
+    </select>
+
+    <select id="sortFilter">
+      <option value="default">Sắp xếp mặc định</option>
+      <option value="price-asc">Giá thấp → cao</option>
+      <option value="price-desc">Giá cao → thấp</option>
+      <option value="condition-desc">Tình trạng tốt nhất</option>
+    </select>
+  </section>
+
+  <!-- ===== PRODUCT GRID ===== -->
+  <section id="products" class="container">
+    <p class="result-count" id="resultCount"></p>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- ===== POLICY ===== -->
+  <section id="policy" class="policy container">
+    <h2>Chính sách cửa hàng</h2>
+    <div class="policy-grid">
+      <div class="policy-card">
+        <h3>🛡️ Bảo hành</h3>
+        <p>3 tháng cho mỗi máy. Không bao gồm nguồn và màn hình.</p>
+      </div>
+      <div class="policy-card">
+        <h3>🔄 Đổi trả</h3>
+        <p>Test 7 ngày, 1 đổi 1 nếu có lỗi kỹ thuật từ nhà sản xuất.</p>
+      </div>
+      <div class="policy-card">
+        <h3>💳 Thanh toán</h3>
+        <p>Đặt cọc tối thiểu 10% với máy Order. Khách ở xa thanh toán full trước khi giao.</p>
+      </div>
+      <div class="policy-card">
+        <h3>📦 Vận chuyển</h3>
+        <p>Giao toàn quốc, đóng gói cẩn thận, có bảo hiểm hàng hóa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <footer id="contact" class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Quancp Mobile</h3>
+        <p>Chuyên điện thoại cao cấp đã qua sử dụng.</p>
+      </div>
+      <div>
+        <p>📞 0398069447</p>
+        <p>✉️ quancp19@gmail.com</p>
+        <p>📍 TP. Hà Nội</p>
+      </div>
+    </div>
+    <p class="copyright">© 2024 Quancp Mobile Clone. Bản demo học tập.</p>
+  </footer>
+
+  <!-- ===== MODAL CHI TIẾT ===== -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
